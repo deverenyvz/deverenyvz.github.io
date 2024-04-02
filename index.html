@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emlakçı Tanıtım Sitesi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+ body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        header {
+            background-color: #424141;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            text-align: center;
+        }
+        .section {
+            padding: 40px 0;
+        }
+        .box {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            text-align: center;
+            transition: transform 0.3s ease;
+            opacity: 0;
+            transform: translateY(50px);
+        }
+        .box:hover {
+            transform: translateY(-10px);
+        }
+        .box h3 {
+            color: #343a40;
+            margin-bottom: 10px;
+        }
+        .box p {
+            line-height: 1.6;
+        }
+        .contact-info {
+            margin-top: 20px;
+        }
+        .contact-info i {
+            margin-right: 10px;
+            color: #343a40;
+        }
+        .contact-info span {
+            display: block;
+            margin-bottom: 10px;
+            text-align: left;
+        }
+        .social-links {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            overflow-x: auto;
+            white-space: nowrap;
+        }
+        .social-links a {
+            color: #333;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 24px;
+        }
+        .social-links a:hover {
+            color: #007bff;
+        }
+        .image-upload {
+            margin-top: 20px;
+            display: inline-block;
+            vertical-align: top;
+            
+        }
+        .image-upload input[type="file"] {
+            display: none;
+        }
+        .image-upload label {
+            display: block;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: #ccc;
+            line-height: 100px;
+            text-align: center;
+            cursor: pointer;
+        }
+        .image-upload img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 50%;
+        }
+        .partner-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.partner-logos img {
+    width: 150px;
+    height: auto;
+    margin: 10px;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>MUSA ATLI</h1>
+    </header>
+    <div class="container">
+        <div class="section">
+            <div class="box">
+                <h3>Hakkımda</h3>
+                <p>Buraya kendiniz hakkında bilgi ekleyebilirsiniz.</p>
+                <div class="image-upload">
+                    <input type="file" id="profile-image-upload" accept="image/*">
+                    <label for="profile-image-upload">
+                        <img id="profile-image-preview" src="https://via.placeholder.com/100" alt="Profil Resmi">
+                    </label>
+                </div>
+            </div>
+            <div class="box">
+                <h3>Başarılarım</h3>
+                <div class="image-upload">
+                    <input type="file" id="success-image-upload" accept="image/*">
+                    <label for="success-image-upload">
+                        <img id="success-image-preview" src="https://via.placeholder.com/100" alt="Başarı Resmi">
+                    </label>
+                </div>
+                <p>2022 DÜNYA CİRO ŞAMPİYONU (Amerika ve Kanada dahil) </p>
+                  <p>Başarı ile ilgili detaylar...</p>
+                <div class="image-upload">
+                    <input type="file" id="success-image-upload2" accept="image/*">
+                    <label for="success-image-upload2">
+                        <img id="success-image-preview2" src="https://via.placeholder.com/100" alt="Başarı Resmi">
+                    </label>
+                </div>
+               
+                <p>2022 TÜRKİYE CİRO ŞAMPİYONU</p>
+                 <p>Başarı ile ilgili detaylar...</p>
+              
+                <div class="image-upload">
+                    <input type="file" id="success-image-upload3" accept="image/*">
+                    <label for="success-image-upload3">
+                        <img id="success-image-preview3" src="https://via.placeholder.com/100" alt="Başarı Resmi">
+                    </label>
+                </div>
+                <p>DÜNYA DA İLK CROWN ÖDÜLÜ SAHİBİ RE/MAX'li </p>
+                
+                <p>Başarı ile ilgili detaylar...</p>
+            </div>
+            
+            
+            <div class="box contact-info">
+                <h3>İletişim</h3>
+                <div class="social-links">
+                    <div><i class="fas fa-envelope"></i></div>
+                    <div>musa@remaxarge.com</div>
+                </div>
+                <div class="social-links">
+                    <div><i class="fas fa-phone"></i></div>
+                    <div>+90 532 100 59 68</div>
+                </div>
+                <div class="social-links">
+                    <div><i class="fas fa-phone"></i></div>
+                    <div>+ 4443241</div>
+                </div>
+                <div class="social-links">
+                    <div><i class="fas fa-map-marker-alt"></i></div>
+                    <div>Atatürk Mah. Ertuğrul Gazi Sok.<br>
+                         Metropol İstanbul A Blok No:2E<br> 
+                         İç Kapı No:366<br>
+                        Ataşehir / İstanbul Anadolu yakası
+                    </div>
+                </div>
+                
+                <div class="social-links">
+                    <a href="https://www.instagram.com/musaatliarge/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://web.whatsapp.com/05321005968"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.remax.com.tr/danisman/4967-523/musa-atli"><i class="fas fa-home"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const boxes = document.querySelectorAll('.box');
+            boxes.forEach(box => {
+                box.style.opacity = '0';
+                box.style.transform = 'translateY(50px)';
+            });
+            window.addEventListener('scroll', fadeIn);
+            function fadeIn() {
+                boxes.forEach(box => {
+                    const boxTop = box.getBoundingClientRect().top;
+                    const windowHeight = window.innerHeight;
+                    if (boxTop < windowHeight / 1.2) {
+                        box.style.opacity = '1';
+                        box.style.transform = 'translateY(0)';
+                    }
+                });
+            }
+            document.getElementById('profile-image-upload').addEventListener('change', function(e) {
+                const reader = new FileReader();
+                reader.onload = function() {
+                    document.getElementById('profile-image-preview').src = reader.result;
+                }
+                reader.readAsDataURL(e.target.files[0]);
+            });
+            document.getElementById('success-image-upload').addEventListener('change', function(e) {
+                const reader = new FileReader();
+                reader.onload = function() {
+                    document.getElementById('success-image-preview').src = reader.result;
+                }
+                reader.readAsDataURL(e.target.files[0]);
+            });
+            document.getElementById('success-image-upload2').addEventListener('change', function(e) {
+                const reader = new FileReader();
+                reader.onload = function() {
+                    document.getElementById('success-image-preview2').src = reader.result;
+                }
+                reader.readAsDataURL(e.target.files[0]);
+            });
+            document.getElementById('success-image-upload3').addEventListener('change', function(e) {
+                const reader = new FileReader();
+                reader.onload = function() {
+                    document.getElementById('success-image-preview3').src = reader.result;
+                }
+                reader.readAsDataURL(e.target.files[0]);
+            });
+        });
+    </script>
+</body>
+</html>
