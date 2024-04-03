@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emlakçı Tanıtım Sitesi</title>
+    <title>Musa Atlı Portföy</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
  body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f8f9fa;
+            background-color: #000000;
             color: #333;
         }
         header {
-            background-color: #424141;
+            background-color: #48D1CC;
             color: #fff;
             padding: 20px;
             text-align: center;
@@ -29,7 +29,7 @@
             padding: 40px 0;
         }
         .box {
-            background-color: #fff;
+            background-color: #CD5C5C;
             padding: 20px;
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -43,7 +43,7 @@
             transform: translateY(-10px);
         }
         .box h3 {
-            color: #343a40;
+            color: #000000;
             margin-bottom: 10px;
         }
         .box p {
@@ -54,7 +54,7 @@
         }
         .contact-info i {
             margin-right: 10px;
-            color: #343a40;
+            color: #000000;
         }
         .contact-info span {
             display: block;
@@ -69,7 +69,7 @@
             white-space: nowrap;
         }
         .social-links a {
-            color: #333;
+            color: #000000;
             text-decoration: none;
             margin: 0 10px;
             font-size: 24px;
@@ -81,6 +81,7 @@
             margin-top: 20px;
             display: inline-block;
             vertical-align: top;
+            
             
         }
         .image-upload input[type="file"] {
@@ -114,7 +115,78 @@
     height: auto;
     margin: 10px;
 }
+*{
+	
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	
+	
+	}
+	
+ h2 {
+	font-family: 'Oswald', sans-serif;
+	color: #212121;
+	font-size: 30px;
+	font-weight: bold;
+	padding-left: 150px;
+	margin-top: 50px;
+  }
+	
+.sosyalbutonlar{
+	margin-top: 50px;
+	display: inline-block;
+	position: relative;
+	left: 0px;
+    text-align: center;
+	
+	}
+	
+.sosyalbutonlar a  {
+  background:#a1a1a1;
+	text-decoration: none;
+	color: #FFF;
+	width: 60px;
+	height: 60px;
+	display: inline-block;
+	border-radius: 10px;
+	margin-right: 20px;
+	font-size: 30px;
+	overflow: hidden;
+	position: relative;
+	line-height: 60px;
+	text-align: center;
+  }
+    
+.sosyalbutonlar a{  
+   transition: transform 0.4s linear 0s, 
+	 border-top-left-radius 0.1s linear 0s, 
+	 border-top-right-radius 0.1s linear 0.1s, 
+	 border-bottom-right-radius 0.1s linear 0.2s, 
+	 border-bottom-left-radius 0.1s linear 0.3s;
+ 	
+}
 
+.sosyalbutonlar .facebook:hover {
+      background-color: #3b5998;
+      transform: rotate(360deg);
+      border-radius: 50%;	 
+}
+
+ 
+ .sosyalbutonlar .instagram:hover   {
+      background-color: #bc2a8d;
+      transform: rotate(360deg);
+      border-radius: 50%;	 
+}
+
+ .sosyalbutonlar .linkedin:hover   {
+      background-color: #00aced;
+      transform: rotate(360deg);
+      border-radius: 50%;	 
+}
+
+ 
     </style>
 </head>
 <body>
@@ -132,6 +204,20 @@
                         <img id="profile-image-preview" src="https://via.placeholder.com/100" alt="Profil Resmi">
                     </label>
                 </div>
+            </div>
+            <div class="box">
+                <h3>Sosyal Medya Hesaplarım</h3>
+                <div class="sosyalbutonlar">
+                    <link rel="stylesheet" href="style.css">
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                    <a href="https://tr-tr.facebook.com/remaxmusa" target="_blank" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href="https://www.instagram.com/musaatliarge/" target="_blank" class="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <a href="https://tr.linkedin.com/in/musa-atl%C4%B1-176832ab" target="_blank" class="linkedin" ><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    
+                   
+              </div>
+              
+                
             </div>
             <div class="box">
                 <h3>Başarılarım</h3>
@@ -189,6 +275,7 @@
                 </div>
                 
                 <div class="social-links">
+                    <a href="https://tr.linkedin.com/in/musa-atl%C4%B1-176832ab" class="fab fa-linkedin"></a>
                     <a href="https://www.instagram.com/musaatliarge/"><i class="fab fa-instagram"></i></a>
                     <a href="https://web.whatsapp.com/05321005968"><i class="fab fa-whatsapp"></i></a>
                     <a href="https://www.remax.com.tr/danisman/4967-523/musa-atli"><i class="fas fa-home"></i></a>
